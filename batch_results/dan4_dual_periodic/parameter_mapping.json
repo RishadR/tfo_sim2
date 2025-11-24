@@ -1,0 +1,941 @@
+{
+  "metadata": {
+    "total_experiments": 80,
+    "storage_format": "npz",
+    "sweep_parameters": [
+      {
+        "param_path": "time",
+        "object_type": "tissue_model",
+        "values": [
+          0.0,
+          0.05063291139240506,
+          0.10126582278481013,
+          0.1518987341772152,
+          0.20253164556962025,
+          0.25316455696202533,
+          0.3037974683544304,
+          0.35443037974683544,
+          0.4050632911392405,
+          0.45569620253164556,
+          0.5063291139240507,
+          0.5569620253164557,
+          0.6075949367088608,
+          0.6582278481012658,
+          0.7088607594936709,
+          0.7594936708860759,
+          0.810126582278481,
+          0.8607594936708861,
+          0.9113924050632911,
+          0.9620253164556962,
+          1.0126582278481013,
+          1.0632911392405062,
+          1.1139240506329113,
+          1.1645569620253164,
+          1.2151898734177216,
+          1.2658227848101267,
+          1.3164556962025316,
+          1.3670886075949367,
+          1.4177215189873418,
+          1.4683544303797469,
+          1.5189873417721518,
+          1.5696202531645569,
+          1.620253164556962,
+          1.6708860759493671,
+          1.7215189873417722,
+          1.7721518987341771,
+          1.8227848101265822,
+          1.8734177215189873,
+          1.9240506329113924,
+          1.9746835443037973,
+          2.0253164556962027,
+          2.0759493670886076,
+          2.1265822784810124,
+          2.1772151898734178,
+          2.2278481012658227,
+          2.278481012658228,
+          2.329113924050633,
+          2.3797468354430378,
+          2.430379746835443,
+          2.481012658227848,
+          2.5316455696202533,
+          2.5822784810126582,
+          2.632911392405063,
+          2.6835443037974684,
+          2.7341772151898733,
+          2.7848101265822782,
+          2.8354430379746836,
+          2.8860759493670884,
+          2.9367088607594938,
+          2.9873417721518987,
+          3.0379746835443036,
+          3.088607594936709,
+          3.1392405063291138,
+          3.189873417721519,
+          3.240506329113924,
+          3.291139240506329,
+          3.3417721518987342,
+          3.392405063291139,
+          3.4430379746835444,
+          3.4936708860759493,
+          3.5443037974683542,
+          3.5949367088607596,
+          3.6455696202531644,
+          3.6962025316455698,
+          3.7468354430379747,
+          3.7974683544303796,
+          3.848101265822785,
+          3.8987341772151898,
+          3.9493670886075947,
+          4.0
+        ]
+      }
+    ],
+    "base_simulation_params": {
+      "session": "pmcx_simulation",
+      "isreflect": 0,
+      "seed": 123456789,
+      "nphoton": 100000000,
+      "tstart": 0.0,
+      "tend": 0.005,
+      "tstep": 0.005,
+      "srcpos": [
+        110,
+        110,
+        57
+      ],
+      "srcdir": [
+        0,
+        0,
+        -1
+      ],
+      "issavedet": 1,
+      "savedetflag": "dp",
+      "issrcfrom0": 1,
+      "issaveseed": 0,
+      "issaveref": 0,
+      "debug": "",
+      "unitinmm": 1.0,
+      "autopilot": 1,
+      "gpuid": 1,
+      "outputtype": "flux",
+      "extra_params": {}
+    },
+    "base_tissue_model": {
+      "name": "Dan4LayerX",
+      "_vol": null,
+      "_prop": null,
+      "wavelength": 650.0,
+      "maternal_hb_conc": 15.0,
+      "maternal_saturation": 1.0,
+      "fetal_hb_conc": 15.0,
+      "fetal_saturation": 0.6,
+      "include_amniotic_fluid": true,
+      "epi_thickness": 2,
+      "derm_thickness": 4,
+      "fetal_thickness": 50,
+      "time": 0.0
+    }
+  },
+  "experiments": [
+    {
+      "filename": "experiment_0000.npz",
+      "index": 0,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.0,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0001.npz",
+      "index": 1,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.05063291139240506,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0002.npz",
+      "index": 2,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.10126582278481013,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0003.npz",
+      "index": 3,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.1518987341772152,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0004.npz",
+      "index": 4,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.20253164556962025,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0005.npz",
+      "index": 5,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.25316455696202533,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0006.npz",
+      "index": 6,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.3037974683544304,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0007.npz",
+      "index": 7,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.35443037974683544,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0008.npz",
+      "index": 8,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.4050632911392405,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0009.npz",
+      "index": 9,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.45569620253164556,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0010.npz",
+      "index": 10,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.5063291139240507,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0011.npz",
+      "index": 11,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.5569620253164557,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0012.npz",
+      "index": 12,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.6075949367088608,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0013.npz",
+      "index": 13,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.6582278481012658,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0014.npz",
+      "index": 14,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.7088607594936709,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0015.npz",
+      "index": 15,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.7594936708860759,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0016.npz",
+      "index": 16,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.810126582278481,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0017.npz",
+      "index": 17,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.8607594936708861,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0018.npz",
+      "index": 18,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.9113924050632911,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0019.npz",
+      "index": 19,
+      "sweep_parameters": {
+        "time": {
+          "value": 0.9620253164556962,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0020.npz",
+      "index": 20,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.0126582278481013,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0021.npz",
+      "index": 21,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.0632911392405062,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0022.npz",
+      "index": 22,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.1139240506329113,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0023.npz",
+      "index": 23,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.1645569620253164,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0024.npz",
+      "index": 24,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.2151898734177216,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0025.npz",
+      "index": 25,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.2658227848101267,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0026.npz",
+      "index": 26,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.3164556962025316,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0027.npz",
+      "index": 27,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.3670886075949367,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0028.npz",
+      "index": 28,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.4177215189873418,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0029.npz",
+      "index": 29,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.4683544303797469,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0030.npz",
+      "index": 30,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.5189873417721518,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0031.npz",
+      "index": 31,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.5696202531645569,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0032.npz",
+      "index": 32,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.620253164556962,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0033.npz",
+      "index": 33,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.6708860759493671,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0034.npz",
+      "index": 34,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.7215189873417722,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0035.npz",
+      "index": 35,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.7721518987341771,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0036.npz",
+      "index": 36,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.8227848101265822,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0037.npz",
+      "index": 37,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.8734177215189873,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0038.npz",
+      "index": 38,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.9240506329113924,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0039.npz",
+      "index": 39,
+      "sweep_parameters": {
+        "time": {
+          "value": 1.9746835443037973,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0040.npz",
+      "index": 40,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.0253164556962027,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0041.npz",
+      "index": 41,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.0759493670886076,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0042.npz",
+      "index": 42,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.1265822784810124,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0043.npz",
+      "index": 43,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.1772151898734178,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0044.npz",
+      "index": 44,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.2278481012658227,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0045.npz",
+      "index": 45,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.278481012658228,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0046.npz",
+      "index": 46,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.329113924050633,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0047.npz",
+      "index": 47,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.3797468354430378,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0048.npz",
+      "index": 48,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.430379746835443,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0049.npz",
+      "index": 49,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.481012658227848,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0050.npz",
+      "index": 50,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.5316455696202533,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0051.npz",
+      "index": 51,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.5822784810126582,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0052.npz",
+      "index": 52,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.632911392405063,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0053.npz",
+      "index": 53,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.6835443037974684,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0054.npz",
+      "index": 54,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.7341772151898733,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0055.npz",
+      "index": 55,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.7848101265822782,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0056.npz",
+      "index": 56,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.8354430379746836,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0057.npz",
+      "index": 57,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.8860759493670884,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0058.npz",
+      "index": 58,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.9367088607594938,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0059.npz",
+      "index": 59,
+      "sweep_parameters": {
+        "time": {
+          "value": 2.9873417721518987,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0060.npz",
+      "index": 60,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.0379746835443036,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0061.npz",
+      "index": 61,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.088607594936709,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0062.npz",
+      "index": 62,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.1392405063291138,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0063.npz",
+      "index": 63,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.189873417721519,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0064.npz",
+      "index": 64,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.240506329113924,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0065.npz",
+      "index": 65,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.291139240506329,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0066.npz",
+      "index": 66,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.3417721518987342,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0067.npz",
+      "index": 67,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.392405063291139,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0068.npz",
+      "index": 68,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.4430379746835444,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0069.npz",
+      "index": 69,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.4936708860759493,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0070.npz",
+      "index": 70,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.5443037974683542,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0071.npz",
+      "index": 71,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.5949367088607596,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0072.npz",
+      "index": 72,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.6455696202531644,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0073.npz",
+      "index": 73,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.6962025316455698,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0074.npz",
+      "index": 74,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.7468354430379747,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0075.npz",
+      "index": 75,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.7974683544303796,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0076.npz",
+      "index": 76,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.848101265822785,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0077.npz",
+      "index": 77,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.8987341772151898,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0078.npz",
+      "index": 78,
+      "sweep_parameters": {
+        "time": {
+          "value": 3.9493670886075947,
+          "object_type": "tissue_model"
+        }
+      }
+    },
+    {
+      "filename": "experiment_0079.npz",
+      "index": 79,
+      "sweep_parameters": {
+        "time": {
+          "value": 4.0,
+          "object_type": "tissue_model"
+        }
+      }
+    }
+  ]
+}

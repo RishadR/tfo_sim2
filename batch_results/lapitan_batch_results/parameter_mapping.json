@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "total_experiments": 9,
+    "storage_format": "npz",
+    "sweep_parameters": [
+      {
+        "param_path": "nphoton",
+        "object_type": "simulation_params",
+        "values": [
+          50000,
+          100000,
+          200000
+        ]
+      },
+      {
+        "param_path": "Vb_arterial",
+        "object_type": "tissue_model",
+        "values": [
+          0.045,
+          0.05,
+          0.055
+        ]
+      }
+    ],
+    "base_simulation_params": {
+      "session": "pmcx_simulation",
+      "isreflect": 0,
+      "seed": 123456789,
+      "nphoton": 1000000,
+      "tstart": 0.0,
+      "tend": 5e-09,
+      "tstep": 5e-09,
+      "srcpos": [
+        51,
+        51,
+        58
+      ],
+      "srcdir": [
+        0,
+        0,
+        -1
+      ],
+      "issavedet": 1,
+      "savedetflag": "dpx",
+      "issrcfrom0": 1,
+      "issaveseed": 0,
+      "issaveref": 0,
+      "debug": "",
+      "unitinmm": 1.0,
+      "autopilot": 1,
+      "gpuid": 1,
+      "outputtype": "flux",
+      "extra_params": {}
+    },
+    "base_tissue_model": {
+      "name": "LapitanTissueModel",
+      "_vol": null,
+      "_prop": null,
+      "wavelength": 660,
+      "epi_thickness": 1,
+      "epi_V_melanin": 0.1,
+      "epi_V_water": 0.2,
+      "epi_Vb_arterial": 0.0,
+      "epi_Vb_venous": 0.0,
+      "derm_thickness": 7,
+      "derm_V_melanin": 0.0,
+      "derm_V_water": 0.6,
+      "Vb_arterial": 0.05,
+      "Vb_venous": 0.05,
+      "subcut_thickness": 50,
+      "subcut_V_melanin": 0.0,
+      "subcut_V_water": 0.15,
+      "subcut_Vb_arterial": 0.025,
+      "subcut_Vb_venous": 0.025,
+      "mu_a_melanin_dict": {
+        "660": 26.94,
+        "810": 13.62,
+        "940": 8.3
+      },
+      "mu_a_water_dict": {
+        "660": 0.00032,
+        "810": 0.0267,
+        "940": 0.036
+      },
+      "mu_a_arterial_dict": {
+        "660": 0.195,
+        "810": 0.402,
+        "940": 0.643
+      },
+      "mu_a_venous_dict": {
+        "660": 0.642,
+        "810": 0.417,
+        "940": 0.577
+      },
+      "mu_a_fat_dict": {
+        "660": 0.065,
+        "810": 0.138,
+        "940": 0.144
+      },
+      "mu_s_epidermis_dict": {
+        "660": 22.74,
+        "810": 18.4,
+        "940": 16.1
+      },
+      "mu_s_dermis_dict": {
+        "660": 13.95,
+        "810": 11.11,
+        "940": 9.74
+      },
+      "mu_s_subcut_dict": {
+        "660": 12.28,
+        "810": 10.27,
+        "940": 9.2
+      }
+    }
+  },
+  "experiments": [
+    {
+      "filename": "experiment_0000.npz",
+      "index": 0,
+      "sweep_parameters": {
+        "nphoton": {
+          "value": 50000,
+          "object_type": "simulation_params"
+        },
+        "Vb_arterial": {
+          "value": 0.045,
+          "object_type": "tissue_model"
+        }
+      },
+      "figure": "experiment_0000.png"
+    },
+    {
+      "filename": "experiment_0001.npz",
+      "index": 1,
+      "sweep_parameters": {
+        "nphoton": {
+          "value": 50000,
+          "object_type": "simulation_params"
+        },
+        "Vb_arterial": {
+          "value": 0.05,
+          "object_type": "tissue_model"
+        }
+      },
+      "figure": "experiment_0001.png"
+    },
+    {
+      "filename": "experiment_0002.npz",
+      "index": 2,
+      "sweep_parameters": {
+        "nphoton": {
+          "value": 50000,
+          "object_type": "simulation_params"
+        },
+        "Vb_arterial": {
+          "value": 0.055,
+          "object_type": "tissue_model"
+        }
+      },
+      "figure": "experiment_0002.png"
+    },
+    {
+      "filename": "experiment_0003.npz",
+      "index": 3,
+      "sweep_parameters": {
+        "nphoton": {
+          "value": 100000,
+          "object_type": "simulation_params"
+        },
+        "Vb_arterial": {
+          "value": 0.045,
+          "object_type": "tissue_model"
+        }
+      },
+      "figure": "experiment_0003.png"
+    },
+    {
+      "filename": "experiment_0004.npz",
+      "index": 4,
+      "sweep_parameters": {
+        "nphoton": {
+          "value": 100000,
+          "object_type": "simulation_params"
+        },
+        "Vb_arterial": {
+          "value": 0.05,
+          "object_type": "tissue_model"
+        }
+      },
+      "figure": "experiment_0004.png"
+    },
+    {
+      "filename": "experiment_0005.npz",
+      "index": 5,
+      "sweep_parameters": {
+        "nphoton": {
+          "value": 100000,
+          "object_type": "simulation_params"
+        },
+        "Vb_arterial": {
+          "value": 0.055,
+          "object_type": "tissue_model"
+        }
+      },
+      "figure": "experiment_0005.png"
+    },
+    {
+      "filename": "experiment_0006.npz",
+      "index": 6,
+      "sweep_parameters": {
+        "nphoton": {
+          "value": 200000,
+          "object_type": "simulation_params"
+        },
+        "Vb_arterial": {
+          "value": 0.045,
+          "object_type": "tissue_model"
+        }
+      },
+      "figure": "experiment_0006.png"
+    },
+    {
+      "filename": "experiment_0007.npz",
+      "index": 7,
+      "sweep_parameters": {
+        "nphoton": {
+          "value": 200000,
+          "object_type": "simulation_params"
+        },
+        "Vb_arterial": {
+          "value": 0.05,
+          "object_type": "tissue_model"
+        }
+      },
+      "figure": "experiment_0007.png"
+    },
+    {
+      "filename": "experiment_0008.npz",
+      "index": 8,
+      "sweep_parameters": {
+        "nphoton": {
+          "value": 200000,
+          "object_type": "simulation_params"
+        },
+        "Vb_arterial": {
+          "value": 0.055,
+          "object_type": "tissue_model"
+        }
+      },
+      "figure": "experiment_0008.png"
+    }
+  ]
+}

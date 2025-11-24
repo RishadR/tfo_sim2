@@ -1,0 +1,78 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tfo-sim2"
+version = "0.1.0"
+description = "A comprehensive wrapper around PMCX for photon transport simulations"
+readme = "README.md"
+requires-python = ">=3.5"
+authors = [{ name = "Rishad Joarder", email = "sa.dip987@gmail.com" }]
+license = { text = "GPL-3.0-or-later" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = ["numpy>=1.0.0", "matplotlib>=1.0.0", "pmcx>=1.0.0"]
+
+[project.optional-dependencies]
+storage = ["jdata>=0.3.0", "h5py>=2.10.0"]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+]
+all = [
+    "jdata>=0.3.0",
+    "h5py>=2.10.0",
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+]
+
+[project.urls]
+# TODO: Update these URLs with your actual project links at some point
+Homepage = "https://github.com/dip987/tfo-sim2"
+Repository = "https://github.com/dip987/tfo-sim2.git"
+Documentation = "https://github.com/dip987/tfo-sim2#readme"
+Issues = "https://github.com/dip987/tfo-sim2/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+packages = ["tfo_sim2"]
+
+[tool.setuptools.package-data]
+tfo_sim2 = ["py.typed"]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-ra -v --strict-markers"
+
+[tool.coverage.run]
+source = ["src/tfo_sim2"]
+omit = ["*/tests/*", "*/test_*.py"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
