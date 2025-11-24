@@ -43,10 +43,10 @@ all = [
 
 [project.urls]
 # TODO: Update these URLs with your actual project links at some point
-Homepage = "https://github.com/dip987/tfo-sim2"
-Repository = "https://github.com/dip987/tfo-sim2.git"
-Documentation = "https://github.com/dip987/tfo-sim2#readme"
-Issues = "https://github.com/dip987/tfo-sim2/issues"
+Homepage = "https://github.com/RishadR/tfo-sim2"
+Repository = "https://github.com/RishadR/tfo-sim2.git"
+Documentation = "https://github.com/RishadR/tfo-sim2#readme"
+Issues = "https://github.com/RishadR/tfo-sim2/issues"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
