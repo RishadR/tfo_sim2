@@ -146,3 +146,5 @@ cython_debug/
 Thumbs.db
 
 build/
+
+batch_results/
