@@ -148,3 +148,5 @@ Thumbs.db
 build/
 
 batch_results/
+
+.vscode/
