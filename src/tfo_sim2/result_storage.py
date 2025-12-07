@@ -462,6 +462,12 @@ class ResultStorage:
                 )
                 setattr(self, attr_name, None)
 
+    def __str__(self) -> str:
+        return f"ResultStorage(name={self.name}),\n" \
+               f"Available Results: {[key for key in self.__dict__.keys() if getattr(self, key) is not None]}"
+               
+    
+    
     def save(self, filepath: str, format: StorageFormat = StorageFormat.NPZ) -> None:
         """
         Save the ResultStorage object to disk.
