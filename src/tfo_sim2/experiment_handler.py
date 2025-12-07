@@ -41,9 +41,7 @@ class ParameterSweep:
     def __post_init__(self):
         """Validate the sweep configuration."""
         if self.object_type not in ("simulation_params", "tissue_model"):
-            raise ValueError(
-                f"object_type must be 'simulation_params' or 'tissue_model', got '{self.object_type}'"
-            )
+            raise ValueError(f"object_type must be 'simulation_params' or 'tissue_model', got '{self.object_type}'")
         if not self.values:
             raise ValueError("values list cannot be empty")
 
@@ -120,9 +118,7 @@ class ExperimentHandler:
         self.detector_array = detector_array if detector_array is not None else DetectorArray()
         self.storage_format = storage_format
         self.results_to_store = results_to_store
-        self.dynamic_parameters = (
-            dynamic_parameters if dynamic_parameters is not None else []
-        )
+        self.dynamic_parameters = dynamic_parameters if dynamic_parameters is not None else []
         self.plotter = plotter
         self.plot_kwargs = plot_kwargs if plot_kwargs is not None else {}
         self.fig_kwargs = fig_kwargs if fig_kwargs is not None else {}
@@ -208,9 +204,7 @@ class ExperimentHandler:
 
         # Generate all combinations
         sim_combinations = list(itertools.product(*[s.values for s in sim_sweeps]))
-        tissue_combinations = list(
-            itertools.product(*[s.values for s in tissue_sweeps])
-        )
+        tissue_combinations = list(itertools.product(*[s.values for s in tissue_sweeps]))
 
         # If no sweeps of a type, add a single empty tuple
         if not sim_combinations:
@@ -254,16 +248,16 @@ class ExperimentHandler:
             tissue_model = copy.deepcopy(self.base_tissue_model)
             detector_array = self.detector_array.create_copy()
 
-            # Apply dynamic parameters before setting static ones
-            for dynamic_param in self.dynamic_parameters:
-                dynamic_param.modify(tissue_model, sim_params, detector_array)
-
             # Apply parameter values
             for param_path, (obj_type, value) in params.items():
                 if obj_type == "simulation_params":
                     self._set_nested_value(sim_params, param_path, value)
                 else:  # tissue_model
                     self._set_nested_value(tissue_model, param_path, value)
+
+            # Apply dynamic parameters
+            for dynamic_param in self.dynamic_parameters:
+                dynamic_param.modify(tissue_model, sim_params, detector_array)
 
             # Run simulation
             simulator = Simulator(
@@ -292,9 +286,7 @@ class ExperimentHandler:
             if self.plotter is not None:
                 self.plotter.result_storage = storage
                 if not self.plotter.check_valid_data():
-                    raise ValueError(
-                        f"Plotting Failed: {self.plotter.troubleshoot_string}"
-                    )
+                    raise ValueError(f"Plotting Failed: {self.plotter.troubleshoot_string}")
                 figure = plt.figure(**self.fig_kwargs)
                 ax = figure.add_subplot(1, 1, 1)
                 self.plotter.plot(ax, **self.plot_kwargs)
@@ -325,9 +317,7 @@ class ExperimentHandler:
                     }
                     for s in self._sweeps
                 ],
-                "base_simulation_params": self._serialize_object(
-                    self.base_simulation_params
-                ),
+                "base_simulation_params": self._serialize_object(self.base_simulation_params),
                 "base_tissue_model": self._serialize_object(self.base_tissue_model),
             },
             "experiments": [],

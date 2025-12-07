@@ -47,7 +47,7 @@ def main():
     # Step 2: Define base simulation parameters
     # ============================================================================
     base_sim_params = SimulationParameters(
-        nphoton=int(1e9),  # Will be swept over
+        nphoton=int(1e4),  # Will be swept over
         tend=5e-6,
         tstep=5e-6,
         srcpos=[110, 110, 50],  # Source at top surface (skin level)
