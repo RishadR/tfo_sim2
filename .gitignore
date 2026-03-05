@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Explicit global Python cache ignores
+**/__pycache__/
+**/*.pyc
+
 # C extensions
 *.so
 
@@ -25,6 +29,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+*.pyc
 
 # PyInstaller
 *.manifest
@@ -150,3 +155,4 @@ build/
 batch_results/
 
 .vscode/
+

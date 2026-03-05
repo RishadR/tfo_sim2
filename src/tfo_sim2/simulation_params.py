@@ -52,6 +52,9 @@ class SimulationParameters:
     # Detector settings
     issavedet: int = 1
     """Whether to save detected photon data."""
+    
+    maxdetphoton: int = 100000000
+    """Maximum number of detected photons to save."""
 
     savedetflag: str = "dpx"
     """Flags indicating what detected photon data to save:
@@ -140,6 +143,7 @@ class SimulationParameters:
             "tend": self.tend,
             "srcpos": self.srcpos,
             "srcdir": self.srcdir,
+            "outputtype": self.outputtype,
         }
         return f"SimulationParameters({', '.join(f'{k}={v}' for k, v in key_params.items())})"
 

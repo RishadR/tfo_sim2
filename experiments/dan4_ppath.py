@@ -27,7 +27,10 @@ class SourceDynamicParameter(DynamicParameter):
         simulation_params.srcpos[2] = top_z + 1
         # Overwrite the detector array
         detector_array.clear()
-        detector_array.add_detector_line((110, 112, top_z + 1), (110, 210, top_z + 1), 10, 2.0)
+        for radius in range(10, 101, 10):
+            # count = int(radius)  # Assume equidistnace - 2 * pi * r / 6 = 
+            count  = 10
+            detector_array.add_detector_circle((110, 110, top_z + 1), (0, 0, 1), radius, count, 2.0)
         
 
 def main():
@@ -53,6 +56,7 @@ def main():
         srcpos=[110, 110, 50],  # Source at top surface (skin level)
         srcdir=[0, 0, -1],  # Directed downward into tissue
         outputtype="flux",
+        maxdetphoton=int(1e8)
     )
     
     dynamic_src_param = SourceDynamicParameter()
@@ -75,7 +79,7 @@ def main():
     # ============================================================================
     # Step 4: Define parameter sweeps
     # ============================================================================
-    derm_thicknesses = [3, 8, 13, 18, 23]  # in mm
+    derm_thicknesses = list(range(4, 20, 2))    # in mm
     handler.add_sweep(ParameterSweep("derm_thickness", derm_thicknesses, 'tissue_model'))
 
     # ============================================================================
