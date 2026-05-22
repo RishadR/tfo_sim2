@@ -1258,9 +1258,9 @@ def get_blood_filled_tissue_mu_a(
     venous_saturation = saturation * venous_saturation_reduction_factor
 
     # Use mu_a formula : mu_a = 2.303 * E * Molar Concentration
-    mu_a_artery = 2.303 * hb_concentration * (saturation * epsilon_hhb + (1 - saturation) * epsilon_hbo2)  # in cm-1
+    mu_a_artery = 2.303 * hb_concentration * (saturation * epsilon_hbo2 + (1 - saturation) * epsilon_hhb)  # in cm-1
     mu_a_venous = (
-        2.303 * hb_concentration * (venous_saturation * epsilon_hhb + (1 - venous_saturation) * epsilon_hbo2)
+        2.303 * hb_concentration * (venous_saturation * epsilon_hho2 + (1 - venous_saturation) * epsilon_hhb)
     )  # in cm-1
     mu_a = venous_volume_fraction * mu_a_venous + arterial_volume_fraction * mu_a_artery + base_tissue_mu_a  # in cm-1
     mu_a = mu_a / 10  # Conversion to mm-1
